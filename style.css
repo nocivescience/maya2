@@ -1,0 +1,58 @@
+body {
+  position: relative;
+  background: #000000;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.maze-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+  perspective: 600px;
+}
+
+.maze {
+  position: relative;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 15px rgba(0, 149, 255, 0.5);
+  border: 1px solid #00aeff;
+  border-radius: 5px;
+  font-size: 2em;
+}
+
+.joystick {
+  width: 50px;
+  height: 50px;
+  background: #00aeff;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 40%;
+  margin-top: 30px;
+  box-shadow: 1px 1px 15px rgba(0, 149, 255, 0.5);
+}
+
+.head-joystick {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+  background: #000000;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.5);
+}/*# sourceMappingURL=style.css.map */
